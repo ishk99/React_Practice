@@ -1,0 +1,20 @@
+What is liver server of VS Code ?
+Live server allows us to create a local development enviornment without deploying the project
+
+How does it work ?
+
+1.  we launch liver server from vs code.
+2.  this create a local web server on our machine.
+3.  this local web server is available at http://localhost:5500 -- which refers to our machine
+4.  Once we open the web browser and access the URL of live server --- the browser will send a GET request to the local server running on our machine.
+5.  so if web browser is the client --- the local server is the web server responding with the files we need.
+
+How does live server handle the request ?
+
+1.  suppose live server recevies a request for index.html from the browser.
+2.  live server locates that file in projecct directory
+3.  and reads the file and sends its content back to the browser as an HTTP response.
+
+How does browser receive this response ?
+
+1.  Browser will
